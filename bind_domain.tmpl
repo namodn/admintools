@@ -1,0 +1,14 @@
+@		IN	SOA	TMPL_DOMAIN.	hostmaster.TMPL_DOMAIN. (
+			TMPL_SERIAL ; serial
+			3600 ; refresh
+			900 ; retry
+			1209600 ; expire
+			3600 ; default_ttl
+			)
+www		IN	CNAME	@
+ftp		IN	CNAME	@
+@		IN	MX	1	smtp1.namodn.com.
+@		IN	MX	2	smtp2.namodn.com.
+@		IN	NS	ns1.namodn.com.
+@		IN	NS	ns2.namodn.com.
+@		IN	A	63.150.15.11
